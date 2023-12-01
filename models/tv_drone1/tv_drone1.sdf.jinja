@@ -4,7 +4,7 @@
   <model name='tv_drone1'>
     <link name='base_link'>
       <!--<pose>0 0 0 0 0 0.785398</pose>-->
-      <pose>0 0 0 0 0 0.785398</pose>
+      <pose>-0.5 0 0 0 0 0.785398</pose>
       <inertial>
 	<!-- TO DO: Correct mass and inertias 0.02166666666666666666667-->
         <pose>0 0 0 0 0 0</pose>
@@ -56,7 +56,6 @@
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
-      <turnGravityOff>true</turnGravityOff>
     </link>
     <link name='/imu_link'>
       <pose>0 0 0 0 0 0</pose>
@@ -144,10 +143,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
-      <turnGravityOff>true</turnGravityOff>
     </link>
 
-    <joint name='tilt_arm_1_joint' type='revolute'>
+    <joint name='tilt_arm_1_joint' type='fixed'>
       <pose>0.17 0 -0.008 0 0 0</pose>
       <child>tilt_arm_1</child>
       <parent>base_link</parent>
@@ -214,10 +212,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
-      <turnGravityOff>true</turnGravityOff>
     </link>
 
-    <joint name='tilt_arm_2_joint' type='revolute'>
+    <joint name='tilt_arm_2_joint' type='fixed'>
       <pose>0.17 0 -0.008 0 0 0</pose>
       <child>tilt_arm_2</child>
       <parent>base_link</parent>
@@ -225,8 +222,8 @@
         <!-- <xyz>0.5 0.5 0</xyz> -->
         <xyz>1 0 0</xyz>
         <limit>
-          <lower>-2</lower>
-          <upper>2</upper>
+          <lower>0</lower> <!--Change the limit to 0 0-->
+          <upper>0</upper>
         </limit>
         <dynamics>
           <friction>1.0</friction>
@@ -284,10 +281,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
-      <turnGravityOff>true</turnGravityOff>
     </link>
 
-    <joint name='tilt_arm_3_joint' type='revolute'>
+    <joint name='tilt_arm_3_joint' type='fixed'>
       <pose>0.17 0 -0.008 0 0 0</pose>
       <child>tilt_arm_3</child>
       <parent>base_link</parent>
@@ -354,10 +350,9 @@
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
-      <turnGravityOff>true</turnGravityOff>
     </link>
 
-    <joint name='tilt_arm_4_joint' type='revolute'>
+    <joint name='tilt_arm_4_joint' type='fixed'>
       <pose>0.17 0 -0.008 0 0 0</pose>
       <child>tilt_arm_4</child>
       <parent>base_link</parent>
