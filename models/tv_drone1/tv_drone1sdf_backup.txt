@@ -4,11 +4,11 @@
   <model name='tv_drone1'>
     <link name='base_link'>
       <!--<pose>0 0 0 0 0 0.785398 1.5708</pose>-->
-      <pose>0 0 0 0 0 1.5708</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
 	<!-- TO DO: Correct mass and inertias 0.02166666666666666666667-->
-        <pose>0 0 -0.2 0 0 0</pose>
-        <mass>1.5</mass>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>2.0</mass>
         <inertia>
           <ixx>0.1</ixx>
           <ixy>0.00</ixy>
@@ -99,7 +99,7 @@
     <link name='tilt_arm_1'>
       <pose>0.177 0.177 0.04 0 0 2.35619</pose>
       <inertial>
-        <pose>0 0.25 -0.19 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <mass>0.04</mass>
         <inertia>
           <ixx>0.0001</ixx>
@@ -168,7 +168,7 @@
     <link name='tilt_arm_2'>
       <pose>-0.177 -0.177 0.04 0 0 -0.785398</pose>
       <inertial>
-        <pose>0 0.25 -0.19 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <mass>0.04</mass>
         <inertia>
           <ixx>0.0001</ixx>
@@ -237,7 +237,7 @@
     <link name='tilt_arm_3'>
       <pose>0.177 -0.177 0.04 0 0 0.785398</pose>
       <inertial>
-        <pose>0 0.25 -0.19 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <mass>0.04</mass>
         <inertia>
           <ixx>0.0001</ixx>
@@ -306,7 +306,7 @@
     <link name='tilt_arm_4'>
       <pose>-0.177 0.177 0.04 0 0 -2.35619</pose>
       <inertial>
-        <pose>0 0.25 -0.19 0 0 0</pose>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
         <mass>0.04</mass>
         <inertia>
           <ixx>0.0001</ixx>
@@ -540,7 +540,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://iris/meshes/iris_prop_cw.dae</uri>
+            <uri>model://iris/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -606,7 +606,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://iris/meshes/iris_prop_cw.dae</uri>
+            <uri>model://iris/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -743,16 +743,16 @@
       <magSubTopic>/mag</magSubTopic>
       <baroSubTopic>/baro</baroSubTopic>
       <mavlink_addr>INADDR_ANY</mavlink_addr>
-      <mavlink_tcp_port>4560</mavlink_tcp_port>
-      <mavlink_udp_port>14560</mavlink_udp_port>
-      <serialEnabled>0</serialEnabled>
-      <serialDevice>/dev/ttyACM0</serialDevice>
-      <baudRate>921600</baudRate>
+      <mavlink_tcp_port>{{ mavlink_tcp_port }}</mavlink_tcp_port>
+      <mavlink_udp_port>{{ mavlink_udp_port }}</mavlink_udp_port>
+      <serialEnabled>{{ serial_enabled }}</serialEnabled>
+      <serialDevice>{{ serial_device }}</serialDevice>
+      <baudRate>{{ serial_baudrate }}</baudRate>
       <qgc_addr>INADDR_ANY</qgc_addr>
       <qgc_udp_port>14550</qgc_udp_port>
       <sdk_addr>INADDR_ANY</sdk_addr>
       <sdk_udp_port>14540</sdk_udp_port>
-      <hil_mode>0</hil_mode>
+      <hil_mode>{{ hil_mode }}</hil_mode>
       <hil_state_level>0</hil_state_level>
       <send_vision_estimation>0</send_vision_estimation>
       <send_odometry>1</send_odometry>
