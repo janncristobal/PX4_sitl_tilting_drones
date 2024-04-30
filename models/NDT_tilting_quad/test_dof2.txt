@@ -1,0 +1,271 @@
+     <link name='tilt_arm_6'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <mass>0.4031180930624021</mass>
+        <inertia>
+          <ixx>0.001829</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000448</iyy>
+          <iyz>0</iyz>
+          <izz>0.001461</izz>
+        </inertia>
+      </inertial>
+      <collision name='tilt_arm_6_collision'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='tilt_arm_6_visual'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+    </link>
+
+    <joint name='tilt_arm_6_joint' type='revolute'>
+      <pose> 0.14 0.15 0.05 0 0 0.785</pose>
+      <child>tilt_arm_6</child>
+      <parent>tilt_arm_2</parent>
+      <axis>
+        <xyz>0.5 0.5 0</xyz>
+        <limit>
+          <lower>-2</lower>
+          <upper>2</upper>
+        </limit>
+        <dynamics>
+          <friction>1.0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='tilt_arm_7'>
+      <pose>0 0 0 0 0 1.5</pose>
+      <inertial>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <mass>0.4031180930624021</mass>
+        <inertia>
+          <ixx>0.001829</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000448</iyy>
+          <iyz>0</iyz>
+          <izz>0.001461</izz>
+        </inertia>
+      </inertial>
+      <collision name='tilt_arm_7_collision'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='tilt_arm_7_visual'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+	    <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+    </link>
+
+    <joint name='tilt_arm_7_joint' type='revolute'>
+      <pose>0.14 0.15 0.05 0 0 0.785</pose>
+      <child>tilt_arm_7</child>
+      <parent>tilt_arm_3</parent>
+      <axis>
+        <xyz>-0.47 0.53 0</xyz>
+        <limit>
+          <lower>-2</lower>
+          <upper>2</upper>
+        </limit>
+        <dynamics>
+          <friction>1.0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='tilt_arm_8'>
+      <pose>0 0 0 0 0 3.1415</pose>
+      <inertial>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <mass>0.4031180930624021</mass>
+        <inertia>
+          <ixx>0.001829</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000448</iyy>
+          <iyz>0</iyz>
+          <izz>0.001461</izz>
+        </inertia>
+      </inertial>
+      <collision name='tilt_arm_8_collision'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='tilt_arm_8_visual'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+    </link>
+
+    <joint name='tilt_arm_8_joint' type='revolute'>
+      <pose>0.14 0.15 0.05 0 0 0.785</pose>
+      <child>tilt_arm_8</child>
+      <parent>tilt_arm_4</parent>
+      <axis>
+        <xyz>-0.5 -0.5 0</xyz>
+        <limit>
+          <lower>-2</lower>
+          <upper>2</upper>
+        </limit>
+        <dynamics>
+          <friction>1.0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <link name='tilt_arm_5'>
+      <pose>0 0 0 0 0 4.64</pose>
+      <inertial>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <mass>0.4031180930624021</mass>
+        <inertia>
+          <ixx>0.001829</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000448</iyy>
+          <iyz>0</iyz>
+          <izz>0.001461</izz>
+        </inertia>
+      </inertial>
+      <collision name='tilt_arm_5_collision'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='tilt_arm_5_visual'>
+        <geometry>
+          <mesh>
+            <scale>1e-3 1e-3 1e-3</scale>
+            <uri>model://NDT_tilting/meshes/dof2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+	    <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+    </link>
+
+    <joint name='tilt_arm_5_joint' type='revolute'>
+      <pose>0.14 0.15 0.05 0 0 0.785</pose>
+      <child>tilt_arm_5</child>
+      <parent>tilt_arm_1</parent>
+      <axis>
+        <xyz>0.47 -0.53 0</xyz>
+        <limit>
+          <lower>-2</lower>
+          <upper>2</upper>
+        </limit>
+        <dynamics>
+          <friction>1.0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>

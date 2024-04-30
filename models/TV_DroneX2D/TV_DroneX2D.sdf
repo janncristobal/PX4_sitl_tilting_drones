@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 
 <sdf version='1.6'>
-  <model name='tv_drone1'>
+  <model name='TV_DroneX2D'>
     <link name='base_link'>
       <!--<pose>0 0 0 0 0 0.785398 1.5708</pose>-->
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 0 0 0 1.5708</pose>
       <inertial>
 	<!-- TO DO: Correct mass and inertias 0.02166666666666666666667-->
         <pose>0 0 0 0 0 0</pose>
@@ -23,7 +23,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/body.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/body.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -43,7 +43,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/body.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/body.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -115,7 +115,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -131,7 +131,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -152,7 +152,7 @@
       <parent>base_link</parent>
       <axis>
         <!-- <xyz>0.47 -0.53 0</xyz> -->
-        <xyz>0.53 0.53 0.0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
           <lower>-2</lower>
           <upper>2</upper>
@@ -185,7 +185,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -201,7 +201,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -222,7 +222,7 @@
       <parent>base_link</parent>
       <axis>
         <!-- <xyz>0.5 0.5 0</xyz> -->
-        <xyz>-0.53 -0.53 0.0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
           <lower>-2</lower> <!--Change the limit to 0 0-->
           <upper>2</upper>
@@ -255,7 +255,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -271,7 +271,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -292,7 +292,7 @@
       <parent>base_link</parent>
       <axis>
         <!-- <xyz>-0.47 0.53 0</xyz> -->
-        <xyz>0.53 -0.53 0.0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
           <lower>-2</lower>
           <upper>2</upper>
@@ -325,7 +325,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <surface>
@@ -341,7 +341,7 @@
         <geometry>
           <mesh>
             <scale>1e-3 1e-3 1e-3</scale>
-            <uri>model://tv_drone1/meshes/arm.stl</uri>
+            <uri>model://TV_DroneX2D/meshes/arm.stl</uri>
           </mesh>
         </geometry>
         <material>
@@ -362,7 +362,7 @@
       <parent>base_link</parent>
       <axis>
         <!--<xyz>-0.5 -0.5 0</xyz>-->
-        <xyz>-0.53 0.53 0.0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
           <lower>-2</lower>
           <upper>2</upper>
